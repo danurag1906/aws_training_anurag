@@ -312,3 +312,5 @@ exi
 exit
 sudo su
 exit
+sudo adduser anuragnew
+passpwd
