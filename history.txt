@@ -315,3 +315,4 @@ exit
 sudo adduser anuragnew
 passpwd
 sudo passwd anuragnew
+mkdir .ssh
