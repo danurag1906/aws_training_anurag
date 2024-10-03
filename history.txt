@@ -186,3 +186,123 @@
   186  date
   187  sudo grep CRON /var/log/cron
   188  history > ~/.bash_history 
+ls
+vi com
+sudo vi commit_history.sh 
+ls
+ls -l
+chmod +x ~/aws_training/commit_history.sh 
+ls -l
+ls
+cd aws_training/
+ls
+cd .
+cd ..
+ls
+mkdir cronjobtask
+cd aws_training/
+ls
+cp commit_history.sh ../cronjobtask/
+cp commits_history.txt ../cronjobtask/
+cd ../cronjobtask/
+ls
+mv commits_history.txt history.txt
+ls
+vi commit_history.sh 
+pwd
+ls
+vi commit_history.sh 
+crontab -e
+cd ..
+ls
+ls -a
+cd aws_training/
+ls -la
+cd ../cronjobtask/
+cd ..
+l
+ls
+cd aws_training/
+ls
+vi commit_history.sh 
+cd cr
+cd ../cronjobtask/
+ls
+git clone https://github.com/danurag1906/aws_training_anurag.git
+ls
+mv commit_history.sh history.txt aws_training_anurag/
+ls
+cd aws_training_anurag/
+ls
+pwd
+sudo vi commit_history.sh 
+crontab -e
+pwd
+ls
+crontab -e
+ls
+./commit_history.sh 
+ssh-keygen -t rsa -b 4096 -C danurag1906@gmail.com
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+git remote set-url origin https://github.com/danurag1906/aws_training_anurag.git
+git remote -v
+ssh -T git@github.com
+git branch --unset-upstream
+git push --set-upstream origin main
+git remote set-url origin git@github.com:danurag1906/aws_training_anurag.git
+git remote -v
+ssh -T git@github.com
+git branch --unset-upstream
+git push --set-upstream origin main
+ls
+sudo grep CRON /var/log/cron
+ls
+s
+ds
+s
+ga
+de
+d
+s
+A
+H
+LS
+ls
+grep ".sh"
+grep '.sh'
+ls | grep '.sh'
+history
+cat ~/.bash_history -n
+sudo vi ~/.bashrc
+history
+cat ~/.bash_history -n
+ls
+vi commit_history.sh 
+sudo grep CRON /var/log/cron
+date
+sudo grep CRON /var/log/cron
+date
+sudo grep CRON /var/log/cron
+history > ~/.bash_history 
+sudo grep CRON /var/log/cron
+date
+sudo grep CRON /var/log/cron
+date
+sudo grep CRON /var/log/cron
+as
+s
+d
+f
+g
+ghistory
+history
+date
+sudo grep CRON /var/log/cron
+ls
+rm a.out 
+ls
+sudo grep CRON /var/log/cron
+date
+sudo grep CRON /var/log/cron
