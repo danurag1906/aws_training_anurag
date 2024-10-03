@@ -1,0 +1,88 @@
+sudo su-
+sudo su -
+sudo sh -
+sudo su -
+cat /etc/redhat-release
+df -h
+sudo yum update -y
+sudo yum install java-1.8.0-openjdk -y
+sudo yum install wget -y
+wget https://repo.almalinux.org/almalinux/8/AppStream/x86_64/os/Packages/compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm
+sudo yum localinstall compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm 
+wget https://download.oracle.com/otn-pub/otn_software/db-express/oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+wget https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackage/oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm
+ls
+sudo yum localinstall oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm 
+ls
+sudo yum localinstall oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm 
+sudo /etc/init.d/oracle-xe-21c configure
+sudo vi ~/.bash_profile
+source ~/.bash_profile
+env | grep ORACLE
+sudo vi $ORACLE_HOME/cv/admin/cvu_config
+sudo vi /opt/oracle/product/21c/dbhomeXE/dbs/initXE.ora
+sudo vi /opt/oracle/product/21c/dbhomeXE/dbs/spfileXE.ora
+sudo fallocate -l 2G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon --show
+free -h
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+sudo /etc/init.d/oracle-xe-21c configure
+sudo service oracle-xe-21c start
+sqlplus sys as sysdba
+sqlplus classicmodels/classicmodels
+source ~/.bash_profile
+sudo service oracle-xe-21c start
+sqlplus
+ls
+ imp classicmodels/classicmodels123 FULL=y File=./classicmodels.dmp
+sudo yum install git
+git clone https://github.com/danurag1906/aws_training.git
+touch commit_history.sh
+vi commit_history.sh
+chmod +x ~/aws_training/commit_history.sh
+ls
+cd home
+cd ~
+ls
+cd aws_training/
+touch commit_history.sh
+vi commit_history.sh
+ls
+chmod +x ~/aws_training/push_history.sh
+chmod +x ~/aws_training/commit_history.sh
+crontab -e
+crontab -l
+ssh-keygen -t rsa -b 4096 -C danurag1906@gmail.com
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+ssh-add ~/aws_training/github_auth
+ssh-keygen -t rsa -b 4096 -C danurag1906@gmail.com
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+cd ~/aws_training
+git remote set-url origin git@github.com:danurag1906/aws_training.git
+git remote -v
+ssh -T git@github.com
+git branch --unset-upstream
+git push --set-upstream origin main
+~/aws_training/commit_history.sh
+sudo grep CRON /var/log/cron
+sudo service cron status
+ssh-keygen -t rsa -b 4096
+cat ~/.ssh/id_rsa.pub
+ssh -i "C:\Users\anurag.daliya\Downloads\anurag_training_keypair.pem" ec2-user@13.60.88.156
+ssh -i "C:\Users\anurag.daliya\Downloads\anurag_new.pem" ec2-user@13.60.88.156
+cd..
+sudo su - anurag
+sudo addUser anurag
+sudo adduser anurag
+sudo vi /etc/ssh/sshd_config
+sudo service sshd restart
+sudo passwd anurag
+ssh-keygen -t rsa -b 4096
+cat ~/.ssh/id_rsa.pub
+sudo su - anurag
