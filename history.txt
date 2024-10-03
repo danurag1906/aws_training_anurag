@@ -326,3 +326,7 @@ ls
 sudo su - anuragnew
 deluser anuragnew
 del anuragnew
+userdel anuragnew
+sudo userdel anuragnew
+sudo adduser anuragnew
+sudo adduser anurag2
