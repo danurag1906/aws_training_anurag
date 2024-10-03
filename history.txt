@@ -307,3 +307,6 @@ sudo grep CRON /var/log/cron
 date
 sudo grep CRON /var/log/cron
 exit
+sudo su - anurag
+exi
+exit
