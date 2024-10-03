@@ -330,3 +330,8 @@ userdel anuragnew
 sudo userdel anuragnew
 sudo adduser anuragnew
 sudo adduser anurag2
+sudo passwd anurag2
+cd
+ls
+cd ..
+ls
