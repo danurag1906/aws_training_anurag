@@ -335,3 +335,5 @@ cd
 ls
 cd ..
 ls
+sudo su - anurag2
+exit
