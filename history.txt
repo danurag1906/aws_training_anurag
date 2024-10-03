@@ -1,88 +1,188 @@
-sudo su-
-sudo su -
-sudo sh -
-sudo su -
-cat /etc/redhat-release
-df -h
-sudo yum update -y
-sudo yum install java-1.8.0-openjdk -y
-sudo yum install wget -y
-wget https://repo.almalinux.org/almalinux/8/AppStream/x86_64/os/Packages/compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm
-sudo yum localinstall compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm 
-wget https://download.oracle.com/otn-pub/otn_software/db-express/oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
-wget https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackage/oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm
-ls
-sudo yum localinstall oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm 
-ls
-sudo yum localinstall oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm 
-sudo /etc/init.d/oracle-xe-21c configure
-sudo vi ~/.bash_profile
-source ~/.bash_profile
-env | grep ORACLE
-sudo vi $ORACLE_HOME/cv/admin/cvu_config
-sudo vi /opt/oracle/product/21c/dbhomeXE/dbs/initXE.ora
-sudo vi /opt/oracle/product/21c/dbhomeXE/dbs/spfileXE.ora
-sudo fallocate -l 2G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-sudo swapon --show
-free -h
-echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-sudo /etc/init.d/oracle-xe-21c configure
-sudo service oracle-xe-21c start
-sqlplus sys as sysdba
-sqlplus classicmodels/classicmodels
-source ~/.bash_profile
-sudo service oracle-xe-21c start
-sqlplus
-ls
- imp classicmodels/classicmodels123 FULL=y File=./classicmodels.dmp
-sudo yum install git
-git clone https://github.com/danurag1906/aws_training.git
-touch commit_history.sh
-vi commit_history.sh
-chmod +x ~/aws_training/commit_history.sh
-ls
-cd home
-cd ~
-ls
-cd aws_training/
-touch commit_history.sh
-vi commit_history.sh
-ls
-chmod +x ~/aws_training/push_history.sh
-chmod +x ~/aws_training/commit_history.sh
-crontab -e
-crontab -l
-ssh-keygen -t rsa -b 4096 -C danurag1906@gmail.com
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-ssh-add ~/aws_training/github_auth
-ssh-keygen -t rsa -b 4096 -C danurag1906@gmail.com
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-cat ~/.ssh/id_rsa.pub
-cd ~/aws_training
-git remote set-url origin git@github.com:danurag1906/aws_training.git
-git remote -v
-ssh -T git@github.com
-git branch --unset-upstream
-git push --set-upstream origin main
-~/aws_training/commit_history.sh
-sudo grep CRON /var/log/cron
-sudo service cron status
-ssh-keygen -t rsa -b 4096
-cat ~/.ssh/id_rsa.pub
-ssh -i "C:\Users\anurag.daliya\Downloads\anurag_training_keypair.pem" ec2-user@13.60.88.156
-ssh -i "C:\Users\anurag.daliya\Downloads\anurag_new.pem" ec2-user@13.60.88.156
-cd..
-sudo su - anurag
-sudo addUser anurag
-sudo adduser anurag
-sudo vi /etc/ssh/sshd_config
-sudo service sshd restart
-sudo passwd anurag
-ssh-keygen -t rsa -b 4096
-cat ~/.ssh/id_rsa.pub
-sudo su - anurag
+    1  sudo su-
+    2  sudo su -
+    3  sudo sh -
+    4  sudo su -
+    5  cat /etc/redhat-release
+    6  df -h
+    7  sudo yum update -y
+    8  sudo yum install java-1.8.0-openjdk -y
+    9  sudo yum install wget -y
+   10  wget https://repo.almalinux.org/almalinux/8/AppStream/x86_64/os/Packages/compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm
+   11  sudo yum localinstall compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm 
+   12  wget https://download.oracle.com/otn-pub/otn_software/db-express/oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+   13  wget https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackage/oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm
+   14  ls
+   15  sudo yum localinstall oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm 
+   16  ls
+   17  sudo yum localinstall oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm 
+   18  sudo /etc/init.d/oracle-xe-21c configure
+   19  sudo vi ~/.bash_profile
+   20  source ~/.bash_profile
+   21  env | grep ORACLE
+   22  sudo vi $ORACLE_HOME/cv/admin/cvu_config
+   23  sudo vi /opt/oracle/product/21c/dbhomeXE/dbs/initXE.ora
+   24  sudo vi /opt/oracle/product/21c/dbhomeXE/dbs/spfileXE.ora
+   25  sudo fallocate -l 2G /swapfile
+   26  sudo chmod 600 /swapfile
+   27  sudo mkswap /swapfile
+   28  sudo swapon /swapfile
+   29  sudo swapon --show
+   30  free -h
+   31  echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+   32  sudo /etc/init.d/oracle-xe-21c configure
+   33  sudo service oracle-xe-21c start
+   34  sqlplus sys as sysdba
+   35  sqlplus classicmodels/classicmodels
+   36  source ~/.bash_profile
+   37  sudo service oracle-xe-21c start
+   38  sqlplus
+   39  ls
+   40   imp classicmodels/classicmodels123 FULL=y File=./classicmodels.dmp
+   41  sudo yum install git
+   42  git clone https://github.com/danurag1906/aws_training.git
+   43  touch commit_history.sh
+   44  vi commit_history.sh
+   45  chmod +x ~/aws_training/commit_history.sh
+   46  ls
+   47  cd home
+   48  cd ~
+   49  ls
+   50  cd aws_training/
+   51  touch commit_history.sh
+   52  vi commit_history.sh
+   53  ls
+   54  chmod +x ~/aws_training/push_history.sh
+   55  chmod +x ~/aws_training/commit_history.sh
+   56  crontab -e
+   57  crontab -l
+   58  ssh-keygen -t rsa -b 4096 -C danurag1906@gmail.com
+   59  eval "$(ssh-agent -s)"
+   60  ssh-add ~/.ssh/id_rsa
+   61  ssh-add ~/aws_training/github_auth
+   62  ssh-keygen -t rsa -b 4096 -C danurag1906@gmail.com
+   63  eval "$(ssh-agent -s)"
+   64  ssh-add ~/.ssh/id_rsa
+   65  cat ~/.ssh/id_rsa.pub
+   66  cd ~/aws_training
+   67  git remote set-url origin git@github.com:danurag1906/aws_training.git
+   68  git remote -v
+   69  ssh -T git@github.com
+   70  git branch --unset-upstream
+   71  git push --set-upstream origin main
+   72  ~/aws_training/commit_history.sh
+   73  sudo grep CRON /var/log/cron
+   74  sudo service cron status
+   75  ssh-keygen -t rsa -b 4096
+   76  cat ~/.ssh/id_rsa.pub
+   77  ssh -i "C:\Users\anurag.daliya\Downloads\anurag_training_keypair.pem" ec2-user@13.60.88.156
+   78  ssh -i "C:\Users\anurag.daliya\Downloads\anurag_new.pem" ec2-user@13.60.88.156
+   79  cd..
+   80  sudo su - anurag
+   81  sudo addUser anurag
+   82  sudo adduser anurag
+   83  sudo vi /etc/ssh/sshd_config
+   84  sudo service sshd restart
+   85  sudo passwd anurag
+   86  ssh-keygen -t rsa -b 4096
+   87  cat ~/.ssh/id_rsa.pub
+   88  sudo su - anurag
+   89  ls
+   90  vi com
+   91  sudo vi commit_history.sh 
+   92  ls
+   93  ls -l
+   94  chmod +x ~/aws_training/commit_history.sh 
+   95  ls -l
+   96  ls
+   97  cd aws_training/
+   98  ls
+   99  cd .
+  100  cd ..
+  101  ls
+  102  mkdir cronjobtask
+  103  cd aws_training/
+  104  ls
+  105  cp commit_history.sh ../cronjobtask/
+  106  cp commits_history.txt ../cronjobtask/
+  107  cd ../cronjobtask/
+  108  ls
+  109  mv commits_history.txt history.txt
+  110  ls
+  111  vi commit_history.sh 
+  112  pwd
+  113  ls
+  114  vi commit_history.sh 
+  115  crontab -e
+  116  cd ..
+  117  ls
+  118  ls -a
+  119  cd aws_training/
+  120  ls -la
+  121  cd ../cronjobtask/
+  122  cd ..
+  123  l
+  124  ls
+  125  cd aws_training/
+  126  ls
+  127  vi commit_history.sh 
+  128  cd cr
+  129  cd ../cronjobtask/
+  130  ls
+  131  git clone https://github.com/danurag1906/aws_training_anurag.git
+  132  ls
+  133  mv commit_history.sh history.txt aws_training_anurag/
+  134  ls
+  135  cd aws_training_anurag/
+  136  ls
+  137  pwd
+  138  sudo vi commit_history.sh 
+  139  crontab -e
+  140  pwd
+  141  ls
+  142  crontab -e
+  143  ls
+  144  ./commit_history.sh 
+  145  ssh-keygen -t rsa -b 4096 -C danurag1906@gmail.com
+  146  eval "$(ssh-agent -s)"
+  147  ssh-add ~/.ssh/id_rsa
+  148  cat ~/.ssh/id_rsa.pub
+  149  git remote set-url origin https://github.com/danurag1906/aws_training_anurag.git
+  150  git remote -v
+  151  ssh -T git@github.com
+  152  git branch --unset-upstream
+  153  git push --set-upstream origin main
+  154  git remote set-url origin git@github.com:danurag1906/aws_training_anurag.git
+  155  git remote -v
+  156  ssh -T git@github.com
+  157  git branch --unset-upstream
+  158  git push --set-upstream origin main
+  159  ls
+  160  sudo grep CRON /var/log/cron
+  161  ls
+  162  s
+  163  ds
+  164  s
+  165  ga
+  166  de
+  167  d
+  168  s
+  169  A
+  170  H
+  171  LS
+  172  ls
+  173  grep ".sh"
+  174  grep '.sh'
+  175  ls | grep '.sh'
+  176  history
+  177  cat ~/.bash_history -n
+  178  sudo vi ~/.bashrc
+  179  history
+  180  cat ~/.bash_history -n
+  181  ls
+  182  vi commit_history.sh 
+  183  sudo grep CRON /var/log/cron
+  184  date
+  185  sudo grep CRON /var/log/cron
+  186  date
+  187  sudo grep CRON /var/log/cron
+  188  history > ~/.bash_history 
