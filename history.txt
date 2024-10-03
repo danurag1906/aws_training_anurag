@@ -314,3 +314,4 @@ sudo su
 exit
 sudo adduser anuragnew
 passpwd
+sudo passwd anuragnew
