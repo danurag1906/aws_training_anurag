@@ -323,3 +323,6 @@ ls
 ls -l
 cd ~/.ssh
 ls
+sudo su - anuragnew
+deluser anuragnew
+del anuragnew
