@@ -337,3 +337,6 @@ cd ..
 ls
 sudo su - anurag2
 exit
+ls
+cd /home/ec2-user
+cd
