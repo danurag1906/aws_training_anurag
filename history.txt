@@ -340,3 +340,4 @@ exit
 ls
 cd /home/ec2-user
 cd
+pscp -i anurag_training_putty.ppk linux_assignment.csv ec2-user@16.171.177.34:/home/ec2-user
