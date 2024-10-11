@@ -346,3 +346,5 @@ vi payments.csv
 ls
 vi linux_assignment.csv
 ls
+sudo yum install -y s-snail
+sudo yum install -y s-nail
