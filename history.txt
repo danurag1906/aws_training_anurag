@@ -356,3 +356,4 @@ sudo vi system_report.sh
 sudo chmod 777 /home/ec2-user/system_report.sh
 crontab -e
 sudo grep CRON /var/log/cron
+./system_report.sh
