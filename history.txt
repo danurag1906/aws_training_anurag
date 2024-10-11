@@ -351,3 +351,4 @@ sudo yum install -y s-nail
 sudo yum install -y sysstat
 sudo vi /etc/s-nail.rc
 sudo chmod 777 /etc/s-nail.rc
+sudo vi /etc/s-nail.rc
