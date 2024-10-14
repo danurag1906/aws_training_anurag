@@ -361,3 +361,5 @@ exit
 ls
 l
 ls
+find . -type f -name '*.csv' -size +500k | wc -l
+find . -type f -name '*.csv' | wc -l
