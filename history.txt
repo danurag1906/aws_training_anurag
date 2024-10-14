@@ -421,3 +421,4 @@ cd aws_training_new
 ./ push_history.sh 
 source push_history.sh 
 cd ..
+crontab -e
