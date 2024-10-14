@@ -372,3 +372,4 @@ ps aux --sort="%CPU"
 ps aux --sort=vsz
 ps aux --sort=%CPU
 ps aux --sort=-pcpu
+ps aux --sort=-pmem
