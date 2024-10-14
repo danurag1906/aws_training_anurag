@@ -406,3 +406,6 @@ vi push_history.sh
 chmod +x push_history.sh 
 sudo bash
 ls
+cd ..
+ls
+ls .
