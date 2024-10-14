@@ -377,3 +377,4 @@ ps -u ec2-user -o
 ps -u ec2-user
 ps -u ec2-user aux
 ps -u ec2-user aux --sort=pcpu
+ps -u ec2-user aux --sort=pmem
