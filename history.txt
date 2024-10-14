@@ -385,3 +385,4 @@ ls
 cat /etc/passwd
 sudo adduser anurag3
 id anurag3
+sudo passwd anurag3
