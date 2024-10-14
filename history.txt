@@ -388,3 +388,6 @@ id anurag3
 sudo passwd anurag3
 sudo su - anurag3
 exit
+git
+git -V
+git --version
