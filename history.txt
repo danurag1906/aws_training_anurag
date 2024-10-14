@@ -409,3 +409,9 @@ ls
 cd ..
 ls
 ls .
+sudo su -
+ls
+cd aws_training_new
+ls
+ls -a
+./ push_history.sh
