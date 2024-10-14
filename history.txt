@@ -358,3 +358,4 @@ crontab -e
 sudo grep CRON /var/log/cron
 ./system_report.sh
 exit
+ls
