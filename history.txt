@@ -393,3 +393,4 @@ git -V
 git --version
 ssh-keygen -t rsa -b 4096 -C "danurag1906@gmail.com"
 ls
+cd home
