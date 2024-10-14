@@ -365,3 +365,5 @@ find . -type f -name '*.csv' -size +500k | wc -l
 find . -type f -name '*.csv' | wc -l
 find . -type f -name '*.csv' -exec ls -lh {} \;
 find . -type f -name '*.csv' -exec ls -lh {} \; | wc -l
+ps
+ps aux
