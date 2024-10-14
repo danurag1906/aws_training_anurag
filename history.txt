@@ -422,3 +422,9 @@ cd aws_training_new
 source push_history.sh 
 cd ..
 crontab -e
+ls
+pwd
+cd aws_training
+ls
+cd ..
+git --version
