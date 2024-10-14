@@ -415,3 +415,5 @@ cd aws_training_new
 ls
 ls -a
 ./ push_history.sh
+cd ..
+./ push_history.sh
