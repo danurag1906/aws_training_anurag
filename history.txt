@@ -382,3 +382,4 @@ find . -type f -name '*.txt'
 find . -type f -name '*.txt' -exec rm -f {} \;
 find . -type f -name '*.txt'
 ls
+cat /etc/passwd
