@@ -367,3 +367,6 @@ find . -type f -name '*.csv' -exec ls -lh {} \;
 find . -type f -name '*.csv' -exec ls -lh {} \; | wc -l
 ps
 ps aux
+ps aux --sort=%CPU
+ps aux --sort="%CPU"
+ps aux --sort=vsz
