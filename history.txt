@@ -402,3 +402,5 @@ cd ..
 cd aws_training_new/
 ls
 touch push_history.sh
+vi push_history.sh 
+chmod +x push_history.sh 
