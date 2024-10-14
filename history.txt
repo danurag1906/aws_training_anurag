@@ -383,3 +383,5 @@ find . -type f -name '*.txt' -exec rm -f {} \;
 find . -type f -name '*.txt'
 ls
 cat /etc/passwd
+sudo adduser anurag3
+id anurag3
