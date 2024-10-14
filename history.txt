@@ -378,3 +378,4 @@ ps -u ec2-user
 ps -u ec2-user aux
 ps -u ec2-user aux --sort=pcpu
 ps -u ec2-user aux --sort=pmem
+find . -type f -name '*.txt'
