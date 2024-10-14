@@ -396,3 +396,9 @@ ls
 cd home
 vi /home/ec2-user/.ssh/id_rsa.pub
 git clone git@github.com:danurag1906/aws_training_new.git
+ls
+cd aws_training
+cd ..
+cd aws_training_new/
+ls
+touch push_history.sh
